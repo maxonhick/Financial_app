@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Financial_app</string>
+    <string name="main_fragment">Главная</string>
+    <string name="transaction_fragment">Транзакции</string>
+    <string name="purposes_fragment">Цели</string>
+    <string name="settings_fragment">Настройки</string>
+</resources>

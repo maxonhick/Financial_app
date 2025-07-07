@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Financial_app" parent="Theme.Material3.Light.NoActionBar">
+    </style>
+
+    <style name="BottomNavTheme" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/BottomNavThemeOverlay</item>
+    </style>
+
+    <style name="BottomNavThemeOverlay">
+        <item name="fontFamily">@font/muli_bold</item>
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorOnPrimary">@color/main</item>
+    </style>
+</resources>
