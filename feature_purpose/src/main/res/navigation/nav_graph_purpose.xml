@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_purpose"
+    app:startDestination="@id/purposeFragment">
+
+    <fragment
+        android:id="@+id/purposeFragment"
+        android:name="com.example.feature_purpose.PurposeFragment"
+        android:label="PurposeFragment" />
+
+    <deepLink app:uri="app://purpose" />
+
+</navigation>

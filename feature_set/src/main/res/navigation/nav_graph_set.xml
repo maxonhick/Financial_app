@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_set"
+    app:startDestination="@id/setFragment">
+
+    <fragment
+        android:id="@+id/setFragment"
+        android:name="com.example.feature_set.SetFragment"
+        android:label="SetFragment" />
+
+    <deepLink app:uri="app://set" />
+
+</navigation>

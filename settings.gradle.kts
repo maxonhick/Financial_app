@@ -21,7 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Financial_app"
 include(":app")
-include(":home_feature")
-include(":transaction_feature")
-include(":purpose_feature")
 include(":feature_home")
+include(":feature_transaction")
+include(":feature_purpose")
+include(":feature_setings")
+include(":feature_set")
+include(":core")

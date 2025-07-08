@@ -17,7 +17,7 @@
         android:icon="@drawable/purpose"/>
 
     <item
-        android:id="@+id/nav_graph_settings"
-        android:title="@string/settings_fragment"
+        android:id="@+id/nav_graph_set"
+        android:title="@string/set_fragment"
         android:icon="@drawable/settings"/>
 </menu>
