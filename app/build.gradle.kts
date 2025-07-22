@@ -53,6 +53,7 @@ dependencies {
     implementation(project(":feature_transaction"))
     implementation(project(":feature_purpose"))
     implementation(project(":feature_set"))
+    implementation(project(":core"))
 
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.fragment.ktx)
