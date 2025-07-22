@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.295" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/muli_regular"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.138" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/muli_regular"
@@ -78,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toEndOf="@+id/text_currency"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
         app:layout_constraintVertical_bias="0.542"
         tools:text="currency" />
 
@@ -113,6 +113,7 @@
         app:layout_constraintVertical_bias="0.140" />
 
     <EditText
+        android:id="@+id/editShortCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/muli_regular"
@@ -122,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toEndOf="@+id/text__short_currency"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editCurrency"
         app:layout_constraintVertical_bias="0.215"
         tools:text="short currency" />
 
