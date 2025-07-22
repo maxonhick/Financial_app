@@ -20,5 +20,9 @@
         android:id="@+id/startFragment"
         android:name="com.example.financial_app.StartFragment"
         android:label="StartFragment" />
+    <fragment
+        android:id="@+id/firstSettingFragment"
+        android:name="com.example.financial_app.FirstSettingFragment"
+        android:label="FirstSettingFragment" />
 
 </navigation>
