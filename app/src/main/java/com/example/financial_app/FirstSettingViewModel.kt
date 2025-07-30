@@ -2,6 +2,8 @@ package com.example.financial_app
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.core.SharedPreference.SharedPreferenceManager
 import com.example.core.database.DatabaseModule
 import com.example.core.database.RepositoryModule
@@ -13,13 +15,18 @@ class FirstSettingViewModel(application: Application): AndroidViewModel(applicat
     private val currencyRepository: CurrencyRepository
     private var sharedPrefs: SharedPreferenceManager
 
+    private val _loggedIn = MutableLiveData<Boolean>(false)
+    val loggedIn: LiveData<Boolean> = _loggedIn
+
     init {
         val database = DatabaseModule.getDatabase(application.applicationContext)
         currencyRepository = RepositoryModule(database).provideCurrencyRepository()
         sharedPrefs = SharedPreferenceManager(application.applicationContext)
+        _loggedIn.value = sharedPrefs.getLoggedIn()
     }
 
     fun saveLoggedIn(flag: Boolean) {
+        _loggedIn.value = flag
         sharedPrefs.saveLoggedIn(flag)
     }
 
